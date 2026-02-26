@@ -40,6 +40,10 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
 
+app.get('/contact', (req, res) => {
+    res.sendFile(path.join(__dirname, 'contact.html'));
+});
+
 // THIS PART IS CRUCIAL: It keeps the process running
 app.listen(PORT, () => {
     console.log(`✅ Success! Server is running at http://localhost:${PORT}`);

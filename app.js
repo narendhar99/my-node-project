@@ -23,7 +23,7 @@ const path = require('path');
 const express = require('express');
 const app = express();
 // Use the port provided by the host, or default to 3000 for local testing
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 10000; 
 
 app.get('/', (req, res) => {
     console.log("Someone just visited the Home page!");

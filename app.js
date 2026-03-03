@@ -36,9 +36,9 @@ app.get('/hello/:name', (req, res) => {
     res.send(`<h1>Hello, ${userName}!</h1>`);
 });
 
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'index.html'));
-});
+// app.get('/', (req, res) => {
+//     res.sendFile(path.join(__dirname, 'index.html'));
+// });
 
 app.get('/contact', (req, res) => {
     res.sendFile(path.join(__dirname, 'contact.html'));
